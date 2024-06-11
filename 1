@@ -1,0 +1,17 @@
+#Find the Child Who Has the Ball After K Seconds
+class Solution {
+public:
+    int numberOfChild(int n, int k) {
+        int pos=0,dir=1;
+        for(int i=0;i<k;i++)
+        {
+            pos=pos+dir;
+            if(pos==n-1 || pos==0)
+            {
+                dir=-dir;
+            }
+                 
+                }
+        return pos;
+    }
+};
